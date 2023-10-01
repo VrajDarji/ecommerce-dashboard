@@ -133,7 +133,7 @@ const ColorsForms: React.FC<ColorsFormsProps> = ({ intialData }) => {
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Size Name"
+                      placeholder="Color Name"
                       {...field}
                     />
                   </FormControl>
@@ -151,7 +151,7 @@ const ColorsForms: React.FC<ColorsFormsProps> = ({ intialData }) => {
                     <div className="flex items-center gap-x-4">
                       <Input
                         disabled={loading}
-                        placeholder="Size Value"
+                        placeholder="Color Value"
                         {...field}
                       />
                       <div

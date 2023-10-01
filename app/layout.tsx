@@ -3,10 +3,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import { ModalProvider } from "@/provider/modal-provider";
-<<<<<<< HEAD
-=======
-import prismadb from "@/lib/prismadb";
->>>>>>> a82dafcc8cec044cfa8918992c70bec6345b041a
 import { ToastProvider } from "@/provider/toast-provide";
 
 const raleway = Raleway({ subsets: ["latin"] });
