@@ -6,9 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Plus } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { DataTable } from "@/components/ui/data-table";
-import Image from "next/image";
 import { BillboardColumn, columns } from "./columns";
-import { ApiAlert } from "@/components/ui/api-alert";
 import { ApiList } from "@/components/ui/api-list";
 
 interface BillboardClientProps {
