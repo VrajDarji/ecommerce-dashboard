@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import { ModalProvider } from "@/provider/modal-provider";
 import { ToastProvider } from "@/provider/toast-provide";
+import { ThemeProvider } from "@/provider/theme-provider";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -21,9 +22,16 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={raleway.className}>
-          <ToastProvider />
-          <ModalProvider />
-          {children}
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <ToastProvider />
+            <ModalProvider />
+            {children}
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
